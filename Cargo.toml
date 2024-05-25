@@ -37,6 +37,11 @@ serial_test = "2"
 path = "src/main.rs"
 name = "sc"
 
+[package.metadata.binstall]
+pkg-url = "{ repo }/releases/download/v{ version }/sc--{ target }{ archive-suffix }"
+bin-dir = "sc"
+pkg-fmt = "tar.gz"
+
 [package.metadata.deb]
 section = "utils"
 assets = [
